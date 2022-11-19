@@ -4,8 +4,8 @@ class Form extends React.Component{
     render(){
         return(
             <form onSubmit={this.props.callWeather}>
-                <input type="text" name="city" placeholder="Город"/>
-                    <button>Узнать погоду</button>
+                <input type="text" name="city" placeholder="City"/>
+                    <button>Check weather</button>
             </form>
         );
     }

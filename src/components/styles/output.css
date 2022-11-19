@@ -1,0 +1,21 @@
+.out {
+    width: fit-content;
+    padding: 10px;
+    border-radius: 25px;
+    border-style: solid;
+    border-width: 5px;
+}
+
+.out:empty {
+    border: none;
+}
+
+.weatherdescription {
+    text-align: center;
+}
+
+.weathericon {
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
