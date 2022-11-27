@@ -8,9 +8,9 @@ class WeatherOut extends React.Component{
     render(){
 
         return(
-            <div>
+            <div className="weather" style={{textAlign: "center", marginTop: "30px"}}>
                 {this.props.city &&
-                <div className = "out">
+                <div className = "out" style={{textAlign: "center", marginTop: "30px"}}>
                 
                 <h3 className="weatherdescription">{this.props.desc}</h3>
 
@@ -43,7 +43,7 @@ class WeatherOut extends React.Component{
                 }
                 </div>
                 }
-                <p>{this.props.error}</p>
+                <p className="error">{this.props.error}</p>
             </div>
         )
     }

@@ -1,6 +1,6 @@
 import React from "react";
-import App from "../App";
 import WeatherOut from "./weatheroutput";
+import './styles/chechboxes.css';
 
 class CheckBoxParams extends React.Component{
 
@@ -27,30 +27,33 @@ class CheckBoxParams extends React.Component{
 
     render(){
         return(
-            <div>
+            <div className = "boxes" style={{textAlign: "center", marginTop: "5px"}}> <div className="chktitle">Display options</div>
+            <div className = "innerboxes"> 
             <input type="checkbox" id="loc" name="loc" checked/>
-            <label for="loc">Location</label>
+            <label className="chklabel" htmlFor="loc">Location</label>
             
             <input type="checkbox" id="tmp" name="tmp" checked/>
-            <label for="tmp">Temperature</label>
+            <label htmlFor="tmp">Temperature</label>
 
             <input type="checkbox" id="feel" name="feel" ischecked={this.state.feel} onChange={this.checkChange}/>
-            <label for="feel">Feels like</label>
+            <label htmlFor="feel">Feels like</label>
 
             <input type="checkbox" id="pres" name="pres" ischecked={this.state.pres} onChange={this.checkChange}/>
-            <label for="pres">Pressure</label>
-
+            <label htmlFor="pres">Pressure</label>
+                
             <input type="checkbox" id="visib" name="visib" ischecked={this.state.visib} onChange={this.checkChange}/>
-            <label for="visib">Visibility</label>
+            <label htmlFor="visib">Visibility</label>
 
             <input type="checkbox" id="humid" name="humid" ischecked={this.state.humid} onChange={this.checkChange}/>
-            <label for="humid">Humidity</label>
+            <label htmlFor="humid">Humidity</label>
 
             <input type="checkbox" id="srise" name="srise" ischecked={this.state.srise} onChange={this.checkChange}/>
-            <label for="srise">Sunrise</label>
+            <label htmlFor="srise">Sunrise</label>
 
             <input type="checkbox" id="sset" name="sset" ischecked={this.state.srise} onChange={this.checkChange}/>
-            <label for="sset">Sunset</label>
+            <label htmlFor="sset">Sunset</label>
+            </div>
+            
 
             <WeatherOut 
             fe={this.state.feel}
