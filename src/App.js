@@ -6,6 +6,26 @@ import Title from "./components/title";
 import './App.css';
 
 
+/*    date1: undefined,
+    date2: undefined,
+    date3: undefined,
+    date4: undefined,
+    date5: undefined,
+    temp_d_1: undefined,
+    temp_d_2: undefined,
+    temp_d_3: undefined,
+    temp_d_4: undefined,
+    temp_d_5: undefined,
+    temp_n_1: undefined,
+    temp_n_2: undefined,
+    temp_n_3: undefined,
+    temp_n_4: undefined,
+    temp_n_5: undefined,
+    icon_1: undefined,
+    icon_2: undefined,
+    icon_3: undefined,
+    icon_4: undefined,
+    icon_5: undefined, */
 
 const API_KEY = "5c1402ae3facc971d73fd79b685a7f21";
 
@@ -30,6 +50,9 @@ class App extends React.Component{
     visibility: undefined,
     sunrise: undefined,
     sunset: undefined,
+    
+
+
     error: undefined
   }
 
@@ -105,7 +128,7 @@ class App extends React.Component{
       <div className="page">
         <Header />
         <Title />
-        <Form callWeather={this.getWeather} />
+        <Form callWeather={this.getWeather}/>
         <CheckBoxParams
         desc={this.state.desc}
         img={this.state.img}

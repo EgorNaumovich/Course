@@ -1,6 +1,6 @@
 import React from "react";
 import WeatherOut from "./weatheroutput";
-import './styles/chechboxes.css';
+import './styles/checkboxes.css';
 
 class CheckBoxParams extends React.Component{
 

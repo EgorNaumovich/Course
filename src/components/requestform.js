@@ -6,6 +6,7 @@ import './styles/selectform.css';
 class Form extends React.Component{
 
 
+
     render(){
         return(
         <div className="row">
@@ -15,7 +16,7 @@ class Form extends React.Component{
                     <fieldset>
                         <legend>Type your city name</legend>
                     <input type="text" className="textform" name="city" placeholder="City"/>
-                   <div><button className="but1">Check weather</button></div>
+                   <div><button className="but1" type="submit">Check weather</button></div>
                    </fieldset>
                 </form>
             </div>
