@@ -7,7 +7,7 @@ class Header extends React.Component{
     render(){
         return(
             <div>
-                <h1 className="heade"> <img src={require(`./icons/main_icon.png`)} alt="mainicon" className="mainicon"/> Website name <DateTime/></h1> 
+                <h1 className="heade"> <img src={require(`./icons/main_icon.png`)} alt="mainicon" className="mainicon"/> Weather <DateTime/></h1> 
             </div>
         )
     }
